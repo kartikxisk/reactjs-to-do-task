@@ -1,38 +1,208 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 22px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 8px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgb(245, 243, 243);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app{
+  width: 30rem;
+  height: 40rem;
+  background: #2c2c30;
+  border-radius: 5px;
+}
+
+.app h1{
+  color:#eee;
+ font-size: 2rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.btn{
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  background: #6d30cf;
+  color:#eee;
+  border-radius: 3px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px 3px #343438;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background;
+}
+
+.btn:focus{
+  outline: none;
+}
+.btn:hover{
+  background: #6531b8;
+}
+
+.tasks{
+  background-color: #343438;
+  height: 16.9rem;
+  margin: 16px;
+  margin-top: 0;
+  padding: 8px 16px;
+  padding-right: 4px;
+  overflow: auto;
+}
+
+.tasks h3{
+  color:#eee;
+  margin: 0;
+}
+
+.task{
+  background: #454549;
+  margin-bottom: 4px;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.task p{
+  margin: 1px;
+  color: #cac3c3;
+  font-size: 0.8rem;
+}
+.right-side-task{
+  width: 2.2rem;
+  height: 2.2rem;
+  border: none;
+  background: #ec1919;
+  color:#eee;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background;
+}
+.right-side-task:hover{
+  background: #bb1919;
+}
+.right-side-task:focus{
+  outline: none;
+}
+
+.reminder-true{
+ border-left: 8px solid rgb(49, 201, 56);
+}
+
+.reminder-false{
+  border-left: 8px solid rgb(207, 38, 38);
+ }
+
+ .add-task{
+   display: flex;
+   flex-direction:column;
+   padding: 16px 16px;
+   justify-content: space-around;
+ }
+
+ .add-task input{
+   height: 2.5rem;
+   padding: 0 8px;
+   margin-bottom: 8px;
+   border: none;
+   background: #484852;
+   color: #fff;
+ }
+ .set-reminder{
+   display:flex;
+   align-items: center;
+ }
+ .set-reminder label{
+   color: #f0e8e8;
+   margin-right:16px;
+   margin-bottom: 14px;
+ }
+ .set-reminder input{
+  margin:0;
+  margin-bottom: 10px;
+  width: 1.3rem;
+}
+
+.add-task input:focus{
+  outline: none;
+}
+input::placeholder{
+  color: rgb(153, 152, 152);
+}
+
+.full-height{
+  height: 31rem;
+}
+
+.footer{
+  display: flex;
+  justify-content:center ;
+   color:#fff;
+   font-size: 0.8rem;
+}
+.footer a{
+  text-decoration: none;
+  color: #6d30cf;
+  margin: 0;
+  padding: 0;
+}
+.footer p{
+  margin: 0;
+  padding: 0;
+}
+.about{
+  height: 31rem;
+  color: #fff;
+  padding: 16px;
+}
+
+.about a{
+  text-decoration: none;
+  color: #ece3e3;
+  background: #6531b8;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.about h2{
+  margin: 0;
+}
+
+.about ul{
+  margin: 8px;
+  margin-bottom: 8rem;
+}
+
+.text-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

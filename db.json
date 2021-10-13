@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "text": "Complete React Tutorial",
+      "day": "2021-02-07T13:04",
+      "reminder": true,
+      "id": "DwaPDiH"
+    },
+    {
+      "text": "Present for Interview",
+      "day": "2021-02-14T15:05",
+      "reminder": true,
+      "id": "YK17wuI"
+    },
+    {
+      "text": "Buy Chicken for Biriyani",
+      "day": "2021-02-19T14:05",
+      "reminder": true,
+      "id": "PvExXRF"
+    },
+    {
+      "text": "Go for Walk",
+      "day": "2021-02-17T16:06",
+      "reminder": true,
+      "id": "6XCRH5i"
+    },
+    {
+      "text": "go to gym",
+      "day": "2021-08-10T07:25",
+      "reminder": true,
+      "id": "dd0E252"
+    }
+  ]
+}
